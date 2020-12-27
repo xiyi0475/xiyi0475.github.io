@@ -1,0 +1,341 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title> 诗词习作 | Gridea</title>
+
+<link rel="shortcut icon" href="https://xiyi0475.github.io/favicon.ico?v=1609073867104">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://xiyi0475.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            Gridea
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1609073867104"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                     诗词习作
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-12-27 ·
+                    </time>
+                    
+                </div>
+                <div class="post-content">
+                    <p>#毕业分赠友朋</p>
+<p>题友人丁酉初夏小像<br>
+序曰：今与思晗步至挂碍亭，闲谈甚久。值离校前夕，亭中二人共诵杜诗《赠卫八处士》，思晗兼诵近作《述行》数首。因感前事，遂题随拍小像。</p>
+<p>识君今世已嫌迟，诵句亭中数别期。<br>
+湖海一身原偶寄，风尘匹马更须驰。<br>
+论才君自轻侪辈，忆往余犹笑己痴。<br>
+莫忘卜邻当日约，相逢一举累千卮。</p>
+<p>毕业分寄思晗海谊二友</p>
+<p>寄思晗<br>
+楚地英标实不群，身行倜傥擅清文。<br>
+六朝落落青衿子，一介悠悠云水身。<br>
+曾与谈经兴未尽，亦聆论史景犹真。<br>
+学林翰苑应无阻，且看君成第一勋。</p>
+<p>寄海谊<br>
+楚驿一杯酒，归程万里尘。<br>
+年来尤寂寞，别后更无人。<br>
+倾盖卓如旧，交游宛若新。<br>
+期君窗外草，他日复为邻。</p>
+<p>闻明明君南返，投诗赠之<br>
+（其一）<br>
+眺远空羡南去鸟，怆神犹有北归人。<br>
+梦中歌酒足堪赏，江畔飘蓬影尚真。<br>
+早有诗声惊众友，还将勋业了闲身。<br>
+回看前事浑如昨，来日高宴莫辞频。</p>
+<p>（其二）<br>
+辛苦天涯愿已违，远人重返旧柴扉。<br>
+四年梦付诗兼酒，万里尘侵鬓与衣。<br>
+门巷空余松桂在，亭阶犹认友朋稀。<br>
+看君试展云中翼，九天鹏抟逸翮归。</p>
+<p>#回乡偶书二首</p>
+<p>其一</p>
+<p>湖海天涯至此完，词章草就暂心安。<br>
+舟辞南浦人频梦，马踏北途影渐单。<br>
+未到关桥先下泪，久离乡味且加餐。<br>
+开春欲赴江东事，岂诉经年行路难。</p>
+<p>其二(集句)</p>
+<p>别后悠悠君莫问，可怜辜负好韶光。<br>
+交朋南北音书隔。分峡东西路正长。<br>
+今雨相看非旧雨，故乡罕乐况他乡。<br>
+极知世事多倚伏，愤抑沉身亦近狂。</p>
+<p>#集句二首</p>
+<p>夜中不寐，集古人句步思晗《夜登挂碍亭寄海内友》原玉</p>
+<p>谁念西风独自凉？（纳兰性德）离骚记诵不成章。（曹伯启）<br>
+江南江北多离别，（罗邺）灯暗灯明更短长。（陆游）<br>
+新酒又添残酒困，（晏几道）断肠分付断云行。（张元干）<br>
+添衣策马寻亭堠，（周邦彦）举目霜林叶叶黄。（洪适）</p>
+<p>集宋元人句戏和固堂《不寐听雨戏作》</p>
+<p>夜来风雨有情无？（辛弃疾） 空响萧萧似见呼。（王质）<br>
+揽将风月归诗薮，（刘一止） 恐妨谈笑卧江湖。（苏辙）<br>
+群芳落尽呈娇态，（沈禧） 独速槎牙立暝途。（范成大)<br>
+回首向来萧瑟处，（苏轼） 垂垂天影带平芜。（石孝友）</p>
+<p>集闷绝句</p>
+<p>题记：近来中心烦闷，不可收拾。<br>
+戏集古人诗中“闷”字，拟成绝句。也就是凑着玩，聊以遣愁。</p>
+<p>其一<br>
+花时闷见联绵雨，正把新诗闷自歌。<br>
+闷拈昌歜嗟香玉，一春风雨闷怀多。<br>
+其二<br>
+端居闷闷繁忧集，小馆灯花孤闷时.<br>
+长日只凭诗遣闷，闷来饮酒醉吟诗.<br>
+其三<br>
+闷来咄咄向空书，闷甚长须酒破除。<br>
+闷来闲检床头历，数诗排闷有中书。<br>
+其四<br>
+箸拨冷灰书闷字，书多愁闷转添多。<br>
+闷坐孤吟无好况， 闷倚诗篇足当歌。<br>
+其四<br>
+早期心闷三杯酒，因以遯世有闷辞。<br>
+拍索闷怀添酒兴，闷中犹记去年时。</p>
+<p>聊录近作寄思晗</p>
+<p>四劫三灾次第过，经年郁气黯销磨。<br>
+世途踯躅难徐步，心海颠蹶惯起波。<br>
+早识衰容徒泪枕，坐观光景谩蹉跎。<br>
+伤时每托伤春例，终古看花少年多。</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://xiyi0475.github.io/post/lesslessmin-da-wang-shi-iihua-kai-xie-luo-he-tui-qian-greatergreater-qian-yan/" class="post-title gt-a-link">
+                    《民大往事Ⅱ：花开叶落何推迁》前言 ·
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">温故而知新</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://xiyi0475.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>『秩序感从何而来？』与『卫生上网』  | Gridea</title>
+
+<link rel="shortcut icon" href="https://xiyi0475.github.io/favicon.ico?v=1609073867104">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://xiyi0475.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            Gridea
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1609073867104"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    『秩序感从何而来？』与『卫生上网』 
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-12-27 ·
+                    </time>
+                    
+                </div>
+                <div class="post-content">
+                    <p>重拾对生命和生活的信心与掌控或许很难——但这只是第一步。接下来需要做的是恢复良好的生活秩序感，我无意在此指导谁去设计他/她的生活。只是将自己的一点经验和教训留在此处而已。</p>
+<p>自忖大概不是那种真正洒脱的人，乱中有序，随性自然，固然值得羡慕。但生性拘谨还是要强调秩序和掌握。养成良好的习惯，对非必要和有害的习惯予以纠正和扭转。所谓的秩序感自然而来。</p>
+<p>首先来说对数字生活的理解，我认为正如线下生活需要保持清洁一样，是时候从突破封锁和审查的kexue上网转变为「卫生上网」了。在读过李如一和其他人的一些文章后，我逐渐确立了以下基本原则，以确保自己在「网上冲浪」时保持洁净和自身秩序感。</p>
+<p>1.告别Wechat，原因可参见https://blog.yitianshijie.net/2016/02/21/byebye-wechat/和https://jesor.me/2017/good-bye-wechat/</p>
+<p>.这对自己来说谈不上多大难度。而且已经推荐和培养起几个好友改用signal通信。至于TG则更多用来接收新闻和图片。但这毕竟是因为我失业在家。如果未来工作需要，还是要用，只是尽量避免。（已停用微信支付、公众号、朋友圈、小程序）</p>
+<p>2.手机使用iOS和原生Android，拒绝国产魔改安卓。尽量避免使用国产app,尽量避免使用社交app。这方面取得的成果是：微博（已注销）知乎（已注销）豆瓣（已注销）twitter(已注销）FB及WhatsApp(已注销）京东、当当注销中。</p>
+<p>除非必要，否则一律使用gv注册服务。不需要注册账号就可以使用的App——一律不注册。已有非必要账号尽量注销。</p>
+<p>3.用startpage取代google成为默认搜索引擎，duckduckgo备用。</p>
+<p>4.邮件国内用Outlook,国外用Gmail,而Protonmail备用。</p>
+<p>5.获取资讯主要通过kindle订阅RSS,也会看telegram。</p>
+<p>6.用卡西欧电子表取代智能手环。</p>
+<p>而未来需要做的是:</p>
+<p>1.转移QQ和百度网盘中的个人资料，逐步停用和注销。</p>
+<p>2.减少网络购物和扫码支付，未来可能会改申信用卡。</p>
+<p>3.以功能机为主力机，智能手机只在必要时刻使用。</p>
+<p>4.浏览器逐渐只用firefox及tor。目前遇到的困难是舍不得chrome上的google翻译功能，所以待定。</p>
+<p>5.钱包常备银行卡（信用卡）和现金，保持现金支付。</p>
+<p>6.定期对手机权限管理进行检查。尽量观看本地视频和书籍，保持写博客。</p>
+<p>当然，做到这些也可能没什么用，也并非卢德派分子。但在今天这个移动互联网席卷一切的时候，保持对隐私和安全的警惕依然是有必要的，这本身就是一种反抗。</p>
+<p>像陈晓卿说的——<br>
+「我现在就是坚持用笔。」<br>
+「为什么呢。」<br>
+「是个撒娇的行为，实际上是个反抗。」<br>
+「自由战士在反抗。」</p>
+<p>2020.3.19</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://xiyi0475.github.io/post/zai-bu-wen-bu-gu-zhi-hou/" class="post-title gt-a-link">
+                     在『不闻不顾』之后 
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">温故而知新</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://xiyi0475.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

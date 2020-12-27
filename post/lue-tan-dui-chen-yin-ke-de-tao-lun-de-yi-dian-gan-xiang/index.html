@@ -1,0 +1,281 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title> 略谈对陈寅恪的讨论的一点感想 | Gridea</title>
+
+<link rel="shortcut icon" href="https://xiyi0475.github.io/favicon.ico?v=1609073867104">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://xiyi0475.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            Gridea
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1609073867104"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                     略谈对陈寅恪的讨论的一点感想
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-12-27 ·
+                    </time>
+                    
+                </div>
+                <div class="post-content">
+                    <p>昨晚在kindle上看到上海书评推送的两篇文章，一篇是『饶佳荣：陈寅恪有过“唐史转向”吗？陆扬《视域之融合》读后』及『陆扬：浅议陈寅恪学术之研究方法——兼答饶佳荣先生』，于是又翻阅了引起争论的原文：《视域之融合：陈寅恪唐史研究特点与贡献的再考察》《北京大学学报（哲学社会科学版）（第五十七卷第四期，2020年7月）》，在此谈一点对陆扬复饶佳荣文的观感。</p>
+<p>众所周知，陆扬教授是一个较有争议的学者，尤其以其「论著拖延症」著称。但在这篇回复似乎较快。其中，陆本人首先交代了此文的一些背景。而后单刀直入，指出当下对陈氏学术的研究，最为缺失的往往是其核心部分，即对他的学术研究的脉络化的了解。</p>
+<p>事实上，由于陈氏身故之后学术界、文化界普遍将其视为学术偶像和文化符号，对其学术能力和学术贡献的仰视和过高估计成为一种普遍现象。这当然不足以否定陈寅恪作为影响巨大的史学学者的地位。但这种「神话倾向」无助于普通民众甚至普通史学从业者了解陈氏的实际成绩，反而有所误导和神秘化。</p>
+<p>究其原因，我还是相当同意陆扬对现在陈寅恪研究的一些误区的批评看法。即：</p>
+<p>1从掌故和耳食之言入手，将一些学界人物在当时语境的某种批评评价作为依据来判断陈氏本人成就（关于这点，陆扬指出:「陈先生那一刻意发问或许有试探金先生学力的意思，但提出的问题本身仍是有些低级的，说明陈寅恪所受的以德国梵语语文学为基础的训练并不重视印度本土的学术训练脉络，那是一种有点类似于二十世纪前期欧洲汉学式的训练方式。」「在陈氏身边虽多为一流学人，但在域外语文之学等方面大都不算内行，因此对陈寅恪这方面的造诣基本是仰望的，他们的评论难以被用作学术客观评估的标准。」等。）</p>
+<p>2.不加考索地将陈寅恪所称赞的学人的学术旨趣和陈寅恪本人的学术旨趣或目标划上等号，以至于将其视为「考据」一类，实在流于外行，对塔说相轮。尽管程千帆等人对此早有发觉，但这也反映出尽管「陈寅恪」热了这么多年，学术界其实并没有真正理解并阐释（尤其是没有很好地阐释）陈本人的实际成绩，而在学术研究的盾牌下背后参杂了太多其他目的（如反思政治运动和对知识人的思想改造、喊冤叫屈；壮大师门、甚或是为史学树立榜样等）以至于过高估计其学术成绩，将塑造完美形象成为常态。而并未对其真正平视，不是真正去细读陈氏的专业学术论文，并了解其学术论点和论证的来龙去脉，更缺乏将其与同时期学者尤其是国外学者同期成绩的比较结果。</p>
+<p>因此，可以说陈寅恪在早年进行的满蒙、梵文、佛教史等领域的研究，一方面未脱传统学问旨趣，另一方面也是其自身追求博通的体现，与当时的专门学者难免有所差距。最终难以为继，既有这类学术自身规律的影响，恐怕也是陈本人的自觉抉择。而陆扬在清华学术体制改革对陈专注唐史的关键性影响也十分新颖和精彩，后人常常论述院系调整对学者改行的影响，实则早已有之。可惜我对当时清华的体系改革方面缺乏了解，对此不敢有何总结可言。</p>
+<p>总之，在汗牛充栋的陈寅恪相关论著中，我更愿意关注此类解读，而对那些反复论述所谓文化关怀和通过道听途说便大加褒扬的文章敬而远之。但愿后一类文章越来越少，甚至「不要再写了！」</p>
+<p>2020.8.16</p>
+<p>参考原文：</p>
+<p>陆扬 | 浅议陈寅恪学术之研究方法——兼答饶佳荣先生：https://www.thepaper.cn/newsDetail_forward_8728119</p>
+<p>饶佳荣｜陈寅恪有过“唐史转向”吗？陆扬《视域之融合》读后：https://www.thepaper.cn/newsDetail_forward_8707383</p>
+<p>视域之融合：陈寅恪唐史研究特点与贡献的再考察：http://hrc.cass.cn/xsdt/sxpy/202007/t20200723_5159479.shtml</p>
+<p>关于程千帆对陈寅恪的评价参见：程千帆述，张伯伟编：《桑榆忆往》，北京大学出版社，第174页。</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://xiyi0475.github.io/post/tu-shu-guan-fu-jin-de-ji-jia-xiao-dian/" class="post-title gt-a-link">
+                     图书馆附近的几家小店
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">温故而知新</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://xiyi0475.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>
